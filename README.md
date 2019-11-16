@@ -1,4 +1,4 @@
-<span><img float="left" height="100" src="imgs\naasilogo.png">
+<span><img align="left" height="100" src="imgs\naasilogo.png">
 
 # Nassi Hospitals Website
 
