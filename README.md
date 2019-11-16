@@ -1,6 +1,6 @@
-<img float="left" height="200" src="imgs\naasilogo.png">
+<img float="left" height="100" src="imgs\naasilogo.png">
 
-## Nassi Hospitals Website
+# Nassi Hospitals Website
 
 This project is a basic react app with an Express backend.
 This is a simple informational website for Nassi Hospitals located in Busia, Funyula.
