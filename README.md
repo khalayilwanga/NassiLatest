@@ -4,7 +4,6 @@
 
 </span>
 
-<hr>
 This project is a basic react app with an Express backend.
 This is a simple informational website for Nassi Hospitals located in Busia, Funyula.
 The stack used to build it is:
