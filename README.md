@@ -1,15 +1,17 @@
-<h4 style="color:blue">Nassi Hospitals Website</h4>
+<img float="left" height="200" src="./naasilogo.png">
+## Nassi Hospitals Website
 
-This project is a basic react app with an Express backend to allow for sending of emails.
+This project is a basic react app with an Express backend.
 This is a simple informational website for Nassi Hospitals located in Busia, Funyula.
 The stack used to build it is
--React
--Gulp
--Express
+
+- React
+- Gulp
+- Express
 
 And other dependencies found in the Package.json file if interested.
 To run project :
 
-<code>npm install && npm start</code>
+`npm install && npm start`
 
 Thanks for visiting!
