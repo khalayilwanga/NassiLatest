@@ -7,11 +7,11 @@ const { watch } = gulp;
 function css() {
   const plugin = [autoprefixer()];
   return gulp
-    .src("css/*.css")
+    .src("./src/styles/css/*.css")
     .pipe(postcss(plugin))
-    .pipe(gulp.dest("./src/cssfinal"));
+    .pipe(gulp.dest("./src/styles/final"));
 }
 
-watch("css/*.css", css);
+watch("src/css/*.css", css);
 
 exports.default = css;
