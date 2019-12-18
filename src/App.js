@@ -3,7 +3,7 @@ import Header from "./layouts/header";
 import Footer from "./layouts/footer";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-//com
+
 import Home from "./components/home";
 import About from "./components/about";
 import Careers from "./components/careers";

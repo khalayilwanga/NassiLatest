@@ -3,6 +3,7 @@ const path = require("path");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+require("gsap");
 require("dotenv").config();
 
 const app = express();
@@ -12,8 +13,6 @@ app.use(cors());
 // bodyparser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-// Serve the static files from the React app
-app.use(express.static(path.join(__dirname, "nassi/build")));
 
 //function sending the message using nodemailer and gmail.
 const emailSender = async emailInfo => {
@@ -49,14 +48,16 @@ app.post("/emailSender", (req, res) => {
   //confirmation to client that message was sent
   res.json({ message: "Sent" });
 });
-
+// Serve the static files from the React app
+app.use(express.static(path.join(__dirname, "build")));
 // Handles any requests that don't match the ones above
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/nassi/build/index.html"));
+  res.sendFile(path.join(__dirname + "build/index.html"));
 });
 
 const port = process.env.PORT || 5000;
 app.listen(port);
 
 //emailSender();
+
 console.log(`App is listening on port  ${port}`);

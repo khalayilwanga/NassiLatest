@@ -2,11 +2,14 @@ import { TimelineMax } from "gsap";
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 // import { HashLink } from "react-router-hash-link";
+import CSSPlugin from "gsap/CSSPlugin";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/iconlibrary";
 import "../styles/css/home.css";
 
 export default function Home() {
+  const C = CSSPlugin;
   //References
   let homeImgref = useRef(null);
   let changingTextRef = useRef(null);
@@ -42,7 +45,7 @@ export default function Home() {
   //Hook to change background image after 10 seconds
   useEffect(() => {
     if (window.screen.width < 980) {
-      console.log("lower than 980");
+      // console.log("lower than 980");
       setHeaderAnimation(
         t2
           .set(
@@ -53,7 +56,7 @@ export default function Home() {
             },
             0
           )
-          // .fromTo(homeImgref, 10, { opacity: 1 }, { opacity: 0.6 }, 1)
+
           .set(
             homeImgref,
             {
