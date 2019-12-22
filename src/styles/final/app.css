@@ -1,0 +1,103 @@
+/* to put in root css */
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--cyan);
+  border-radius: 10px;
+  border: 1.5px solid white;
+}
+.app {
+  text-align: justify;
+  --cyan: #15b4d8;
+  --quicksand: "Quicksand", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--quicksand);
+  list-style: none;
+  min-height: 100%;
+  /* z-index: -20; */
+}
+
+#header_rep {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 20;
+}
+.switch__item {
+  min-height: 100vh;
+}
+:-webkit-any-link {
+  text-decoration: none;
+  /* color: inherit; */
+}
+:-moz-any-link {
+  text-decoration: none;
+  /* color: inherit; */
+}
+:any-link {
+  text-decoration: none;
+  /* color: inherit; */
+}
+:-webkit-any-link:hover {
+  text-decoration: none;
+}
+:-moz-any-link:hover {
+  text-decoration: none;
+}
+:any-link:hover {
+  text-decoration: none;
+}
+:-webkit-any-link:focus {
+  text-decoration: none;
+}
+:-moz-any-link:focus {
+  text-decoration: none;
+}
+:any-link:focus {
+  text-decoration: none;
+}
+.scroll-up {
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.scroll-down {
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+footer {
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
