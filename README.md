@@ -1,4 +1,4 @@
-<span><img align="left" height="100" src="imgs\naasilogo.png">
+<span><img align="left" height="100" src="./src/images/naasilogo.png">
 
 ## Nassi Hospitals Website
 
@@ -18,5 +18,9 @@ And other dependencies found in the Package.json file if interested.
 To run project :
 
 `npm install && npm start`
+
+To see the deployed version(React frontend) on netlify find it [here](https://react-express-project-nassi-site-preliminary.netlify.com)
+
+To see the code to deploy the same project using Netlify functions to deploy the express backend find it [here.](https://github.com/khalayilwanga/Nassi__netlifyDeployment)
 
 Thanks for visiting!
