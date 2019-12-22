@@ -1,4 +1,4 @@
-import "../styles/css/events.css";
+import "../styles/final/events.css";
 import React, { Component } from "react";
 
 export default class Events extends Component {

@@ -6,7 +6,7 @@ import CSSPlugin from "gsap/CSSPlugin";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/iconlibrary";
-import "../styles/css/home.css";
+import "../styles/final/home.css";
 
 export default function Home() {
   const C = CSSPlugin;
@@ -150,28 +150,33 @@ export default function Home() {
             </li>
           </div>
           <div className="services--home homepage__columns_item">
-            <span className="homepage__listitem">
-              <FontAwesomeIcon
-                className="homepage__icons"
-                icon={["fas", "stethoscope"]}
-              />
-            </span>
-            <div className="homepage__column--title homepage__listitem">
-              QUALITY MEDICAL CARE
+            <div className="homepagecolumns__line_one">
+              <span className="homepage__listitem homepage__margin">
+                <FontAwesomeIcon
+                  className="homepage__icons"
+                  icon={["fas", "stethoscope"]}
+                />
+              </span>
+              <div className="homepage__column--title homepage__listitem homepage__margin">
+                QUALITY MEDICAL CARE
+              </div>
             </div>
+
             <div className="learn-more small_homepage_icon homepage__listitem ">
               <Link to="/services">Learn more</Link>
             </div>
           </div>
           <div className="personnel--home homepage__columns_item">
-            <span className="homepage__listitem">
-              <FontAwesomeIcon
-                className="homepage__icons"
-                icon={["fas", "calendar-day"]}
-              />
-            </span>
-            <div className="homepage__column--title homepage__listitem">
-              RECENT EVENTS
+            <div className="homepagecolumns__line_one">
+              <span className="homepage__listitem homepage__margin">
+                <FontAwesomeIcon
+                  className="homepage__icons"
+                  icon={["fas", "calendar-day"]}
+                />
+              </span>
+              <div className="homepage__column--title homepage__listitem homepage__margin">
+                RECENT EVENTS
+              </div>
             </div>
 
             <div className="learn-more small_homepage_icon homepage__listitem ">

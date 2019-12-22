@@ -170,6 +170,19 @@ div.header-img {
 .intro--home__icon {
   font-size: 40px;
 }
+.homepagecolumns__line_one {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center;
+  font-size: medium;
+}
+.homepage__margin {
+  margin: 10px;
+}
 @media only screen and (max-width: 1060px) {
   .homepage__columns {
     display: -webkit-box;
@@ -210,6 +223,22 @@ div.header-img {
     }
     .changing__text {
       font-size: medium;
+    }
+    .homepage__columns_item {
+      padding: 1px;
+      font-size: small;
+    }
+    .homepagecolumns__line_one {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+              justify-content: space-between;
+    }
+    .homepage__columns {
+      margin-top: 5px;
     }
   }
 }

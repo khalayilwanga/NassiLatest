@@ -1,6 +1,6 @@
 import "../styles/iconlibrary";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../styles/css/contacts.css";
+import "../styles/final/contacts.css";
 import TextareaAutosize from "react-textarea-autosize";
 import React, { Component } from "react";
 import axios from "axios";
@@ -15,27 +15,47 @@ export default class Contacts extends Component {
       message: ""
     };
     this.messageAlertref = React.createRef();
+    this.emailAlertref = React.createRef();
   }
+  emailErrorChecker = e => {
+    let re = /\w+@[a-zA-Z]+\.[a-z A-Z]{3}/gi;
+    if (re.test(e.target.value) === false) {
+      console.log("error");
+      this.flashMessage(
+        "red",
+        "Please insert a valid email address",
+        this.emailAlertref
+      );
+      return;
+    } else if (re.test(e.target.value) === true) {
+      console.log("all good");
+      return;
+    }
+  };
 
   changeHandler = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
-  flashMessage = (color, message) => {
-    this.messageAlertref.current.hidden = false;
-    this.messageAlertref.current.innerText = message;
-    this.messageAlertref.current.style.color = color;
+  flashMessage = (color, message, el) => {
+    el.current.hidden = false;
+    el.current.innerText = message;
+    el.current.style.color = color;
 
     setTimeout(() => {
-      this.messageAlertref.current.hidden = true;
+      el.current.hidden = true;
     }, 12000);
   };
   emailSender = e => {
     e.preventDefault();
-    console.log(this.state);
+
     let data = { ...this.state };
     if (this.state.emailAddress === "" || this.state.emailAddress === null) {
-      this.flashMessage("red", "Please provide us with your email address");
-      console.log(this.state);
+      this.flashMessage(
+        "red",
+        "Please provide us with your email address",
+        this.messageAlertref
+      );
+
       return;
     }
 
@@ -46,7 +66,8 @@ export default class Contacts extends Component {
           this.messageAlertref.current.style.color = "green";
           this.flashMessage(
             "green",
-            "Your message was sent successfully. We will get back to you as soon as possible"
+            "Your message was sent successfully. We will get back to you as soon as possible",
+            this.messageAlertref
           );
         }
       })
@@ -89,7 +110,7 @@ export default class Contacts extends Component {
               </span>
               <span>
                 <div>Off Funyula - Bumala Road Mosque Street.</div>
-                <div>P.O Box 486- 00506</div>
+                <div>P.O Box 486- 50400</div>
                 <div>Busia, Kenya</div>
               </span>
             </li>
@@ -115,8 +136,17 @@ export default class Contacts extends Component {
                     className="contactsPage--input"
                     placeholder="Email Address"
                     value={this.state.emailAddress}
+                    onBlur={this.emailErrorChecker}
                     name="emailAddress"
                   ></input>
+                </div>
+                <div
+                  id="successMessage"
+                  style={{ fontWeight: "bold" }}
+                  hidden={true}
+                  ref={this.emailAlertref}
+                >
+                  {" "}
                 </div>
 
                 <small className="contactsPage--smallTag contactsPage--formitem">
@@ -148,9 +178,6 @@ export default class Contacts extends Component {
                 ref={this.messageAlertref}
               >
                 {" "}
-                {/* <span>
-                  <FontAwesomeIcon icon={["fas", "check-circle"]} />
-                </span> */}
               </div>
             </div>
           </div>

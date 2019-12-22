@@ -1,4 +1,4 @@
-import "../styles/css/services.css";
+import "../styles/final/services.css";
 import React, { Component } from "react";
 
 export default class Services extends Component {

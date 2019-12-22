@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/css/footer.css";
+import "../styles/final/footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/iconlibrary";
 import { Link } from "react-router-dom";
@@ -39,8 +39,8 @@ export default function footer() {
               />
             </span>
             <span className="listitem__footer__text">
-              Off Funyula - Bumala Road Mosque Street. P.O Box 486- 00506
-              Funyula, Busia Kenya
+              Off Funyula - Bumala Road Mosque Street. P.O Box 486- 50400 ,
+              Busia Kenya
             </span>
           </li>
         </div>

@@ -1,4 +1,4 @@
-import "../styles/css/careers.css";
+import "../styles/final/careers.css";
 import React, { Component } from "react";
 
 export default class Careers extends Component {

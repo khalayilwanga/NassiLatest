@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useRef, useEffect } from "react";
-import "../styles/css/header.css";
+import "../styles/final/header.css";
 import Logo from "../images/naasilogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/iconlibrary";
