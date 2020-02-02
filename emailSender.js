@@ -49,10 +49,10 @@ app.post("/emailSender", (req, res) => {
   res.json({ message: "Sent" });
 });
 // Serve the static files from the React app
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "client")));
 // Handles any requests that don't match the ones above
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "build/index.html"));
+  res.sendFile(path.join(__dirname + "client/index.html"));
 });
 
 const port = process.env.PORT || 5000;

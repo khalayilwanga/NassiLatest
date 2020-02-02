@@ -45,9 +45,7 @@ export default class Contacts extends Component {
       el.current.hidden = true;
     }, 12000);
   };
-  emailSender = e => {
-    e.preventDefault();
-
+  emailSender = () => {
     let data = { ...this.state };
     if (this.state.emailAddress === "" || this.state.emailAddress === null) {
       this.flashMessage(
@@ -58,7 +56,7 @@ export default class Contacts extends Component {
 
       return;
     }
-
+    console.log(this.state);
     axios
       .post("emailSender", data)
       .then(res => {
