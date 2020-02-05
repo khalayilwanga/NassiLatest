@@ -140,3 +140,11 @@
   transition: 0.2s;
   /* border-color: transparent; */
 }
+@media only screen and (max-width: 600px) {
+  .flickity-prev-next-button.next {
+    right: 5px;
+  }
+  .flickity-prev-next-button.previous {
+    left: 5px;
+  }
+}
