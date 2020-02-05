@@ -27,7 +27,7 @@ export default class Events extends Component {
             <div
               style={{
                 width: "auto",
-                margin: "10px",
+                // margin: "10px",
                 marginLeft: 0
               }}
             >
