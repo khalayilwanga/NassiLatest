@@ -52,7 +52,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header2__small.jpg) center center no-repeat "
+                "url(headerimgs/header1_small.jpg) center center no-repeat "
             },
             0
           )
@@ -61,7 +61,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header3__small.jpg) center center no-repeat"
+                "url(headerimgs/header2_small.jpg) center center no-repeat"
             },
             10
           )
@@ -69,7 +69,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header4__small.jpg) center center no-repeat"
+                "url(headerimgs/header3_small.jpg) center center no-repeat"
             },
             20
           )
@@ -77,7 +77,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header5__small.jpg) center center no-repeat"
+                "url(headerimgs/header1_small.jpg) center center no-repeat"
             },
             30
           )
@@ -88,28 +88,32 @@ export default function Home() {
           .set(
             homeImgref,
             {
-              background: "url(headerimgs/header2.jpg) center center no-repeat "
+              background:
+                "url(headerimgs/header1_big.jpg) center center no-repeat "
             },
             0
           )
           .set(
             homeImgref,
             {
-              background: "url(headerimgs/header3.jpg) center center no-repeat"
+              background:
+                "url(headerimgs/header2_big.jpg) center center no-repeat"
             },
             10
           )
           .set(
             homeImgref,
             {
-              background: "url(headerimgs/header4.jpg) center center no-repeat"
+              background:
+                "url(headerimgs/header3_big.jpg) center center no-repeat"
             },
             20
           )
           .set(
             homeImgref,
             {
-              background: "url(headerimgs/header5.jpg) center center no-repeat"
+              background:
+                "url(headerimgs/header1_big.jpg) center center no-repeat"
             },
             30
           )
@@ -118,7 +122,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="home">
+    <div className="home" id="home_top">
       <div
         className="header-img"
         ref={element => {

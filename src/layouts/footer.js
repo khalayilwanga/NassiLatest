@@ -29,7 +29,9 @@ export default function footer() {
             <span>
               <FontAwesomeIcon icon={["fas", "at"]} className="icons__footer" />
             </span>
-            <span className="listitem__footer__text">inquiries@naasi.org</span>
+            <span className="listitem__footer__text">
+              nassihospitals@gmail.com
+            </span>
           </li>
           <li className="listitem__footer">
             <span>
@@ -46,19 +48,19 @@ export default function footer() {
         </div>
         <div className="quick_links__footer content_footer_item">
           <li className="listitem__footer title__footer">Quick Links</li>
-          {/* ***TO-DO*** =>add correct links here!! */}
+
           <HashLink to="/services#staff">
             <li className="listitem__footer footer_link">Staff</li>
           </HashLink>
-          <HashLink to="/services#main">
+          <HashLink to="/services#services_top">
             <li className="listitem__footer footer_link">Services</li>
           </HashLink>
-          <Link to="/events">
+          <HashLink to="/events#events_top">
             <li className="listitem__footer footer_link">Events</li>
-          </Link>
-          <Link to="/careers">
+          </HashLink>
+          <HashLink to="/careers#careers_top">
             <li className="listitem__footer footer_link">Careers</li>
-          </Link>
+          </HashLink>
         </div>
         <div className="social_media__footer content_footer_item">
           <li className="listitem__footer title__footer">SOCIAL MEDIA</li>
@@ -102,8 +104,11 @@ export default function footer() {
 
       <div className="bottom__footer">
         &copy; Nassi Hospitals {currentYear} |Developed by
-        <a href="#" className="developer__link footer_link">
-          Khalayi.L
+        <a
+          href="https://khalayi-lwanga.herokuapp.com"
+          className="developer__link footer_link"
+        >
+          Khalayi.T.Lwanga
         </a>
         using{" "}
         <span className="react-icon">

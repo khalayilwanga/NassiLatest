@@ -5,7 +5,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="about">
-        <div className="main__about">
+        <div className="main__about" id="about_top">
           <div className="background__about about__item">
             <h3 className="about--title content--title__about">Background</h3>
             <p className="background__about--content">
@@ -39,20 +39,20 @@ export default class About extends Component {
               <picture>
                 <source
                   media="(max-width: 650px)"
-                  srcset="Pic/PIC_300_wide_200_tall.jpg"
+                  srcset="board/board_of_directors_nassi_300_wide_195_tall.jpg"
                 ></source>
 
                 <source
                   media="(max-width: 850px)"
-                  srcset="Pic/PIC_500_wide_333_tall.jpg"
+                  srcset="board/board_of_directors_nassi_500_wide_325_tall.jpg"
                 ></source>
                 <source
                   media="(max-width: 1000px)"
-                  srcset="Pic/PIC_700_wide_467_tall.jpg"
+                  srcset="board/board_of_directors_nassi_700_wide_456_tall.jpg"
                 ></source>
 
                 <img
-                  src="Pic/PIC_700_wide_467_tall.jpg"
+                  src="board/board_of_directors_nassi_700_wide_456_tall.jpg"
                   alt="Board of directors"
                 />
               </picture>

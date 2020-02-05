@@ -5,6 +5,7 @@ import Logo from "../images/naasilogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/iconlibrary";
 import { NavLink, Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { TimelineMax, Elastic } from "gsap";
 import { CSSTransition } from "react-transition-group";
 
@@ -149,7 +150,7 @@ export default function Header() {
             >
               <li>
                 <NavLink
-                  to="/"
+                  to="/#home_top"
                   exact
                   activeClassName="activelink__header"
                   className="link__item"

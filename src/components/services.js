@@ -5,7 +5,7 @@ export default class Services extends Component {
   render() {
     return (
       <div className="services">
-        <div className="main_services">
+        <div className="main_services " id="services_top">
           <div id="main" className="services__services services__item">
             <h3 className="services--title">Services Offered</h3>
             <p>

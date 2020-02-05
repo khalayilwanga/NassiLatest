@@ -10,6 +10,7 @@ const app = express();
 
 //cors middleware
 app.use(cors());
+
 // bodyparser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -48,8 +49,10 @@ app.post("/emailSender", (req, res) => {
   //confirmation to client that message was sent
   res.json({ message: "Sent" });
 });
+
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, "client")));
+
 // Handles any requests that don't match the ones above
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "client/index.html"));
@@ -57,7 +60,5 @@ app.get("*", (req, res) => {
 
 const port = process.env.PORT || 5000;
 app.listen(port);
-
-//emailSender();
 
 console.log(`App is listening on port  ${port}`);

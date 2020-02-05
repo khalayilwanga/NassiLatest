@@ -78,7 +78,7 @@ export default class Contacts extends Component {
   render() {
     return (
       <div className="contactsPage">
-        <div className="main_contactsPage">
+        <div className="main_contactsPage contacts_top">
           <div className=" contactsPage__item">
             <h3 className="contactsPage--title">CONTACTS</h3>
             <li className="contactsPage--listitem">
@@ -107,9 +107,9 @@ export default class Contacts extends Component {
                 />
               </span>
               <span>
-                <div>Off Funyula - Bumala Road Mosque Street.</div>
-                <div>P.O Box 486- 50400</div>
-                <div>Busia, Kenya</div>
+                <div>Off Funyula - Bumala Road Mosque Street,</div>
+                <div>P.O Box 486- 50400,</div>
+                <div>Busia County, Kenya.</div>
               </span>
             </li>
           </div>

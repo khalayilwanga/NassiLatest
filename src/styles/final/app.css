@@ -75,15 +75,15 @@
 }
 .scroll-up {
   -webkit-transform: none;
-          transform: none;
+  transform: none;
   -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  transition-duration: 500ms;
 }
 .scroll-down {
   -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
   -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  transition-duration: 500ms;
 }
 footer {
 }
@@ -94,8 +94,8 @@ textarea {
   font-family: inherit;
   font-size: 100%;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 input:focus,
 textarea:focus {
