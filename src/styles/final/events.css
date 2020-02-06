@@ -31,6 +31,7 @@
   border: none;
   background: #4b4a4a;
   position: relative;
+  overflow: hidden;
 }
 
 /* .flickity-page-dots {

@@ -18,7 +18,7 @@ const frontImages = [
 export default class Events extends Component {
   render() {
     return (
-      <div className="events">
+      <div className="events" style={{ marginBottom: "200px" }}>
         <div className="main_events" id="events_top">
           <div className="recent--events_events events__item">
             <h3 className="events--title">Recent Events</h3>
