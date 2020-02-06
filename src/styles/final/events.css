@@ -108,7 +108,7 @@
 .flickity-prev-next-button.previous {
   /* transform: translateX(400px); */
   position: absolute;
-  left: -50px;
+  left: 5px;
   top: 50%;
   background: transparent;
   padding: 5px;
@@ -118,7 +118,7 @@
 }
 .flickity-prev-next-button.next {
   position: absolute;
-  right: -50px;
+  right: 5px;
   top: 50%;
   background: transparent;
   padding: 5px;
@@ -141,11 +141,11 @@
   transition: 0.2s;
   /* border-color: transparent; */
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .flickity-prev-next-button.next {
     right: 5px;
   }
   .flickity-prev-next-button.previous {
     left: 5px;
   }
-}
+} */
