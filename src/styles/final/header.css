@@ -63,6 +63,9 @@ header {
 header a {
   color: var(--cyan);
 }
+.header-img {
+  outline: 3px solid orange;
+}
 
 .header__emergency {
   grid-area: emergency;
