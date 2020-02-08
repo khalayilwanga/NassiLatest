@@ -63,9 +63,9 @@ header {
 header a {
   color: var(--cyan);
 }
-.header-img {
-  outline: 3px solid orange;
-}
+/* .header-img {
+
+} */
 
 .header__emergency {
   grid-area: emergency;
@@ -252,10 +252,10 @@ header a {
     transition: opacity 1000ms;
   }
   .logo {
-    transform: scale(0.5) translateY(-70px) translateX(-7px);
+    transform: scale(0.5) translateY(-50px) translateX(-7px);
   }
   .burger {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   header {
     margin: 1px;

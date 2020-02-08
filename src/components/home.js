@@ -51,7 +51,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header9_small.jpg) center center no-repeat "
+                "url(headerimgs/header9_small.jpg) center top no-repeat "
             },
             0
           )
@@ -60,7 +60,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header2_small.jpg) center center no-repeat"
+                "url(headerimgs/header2_small.jpg) center top no-repeat"
             },
             10
           )
@@ -68,7 +68,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header10_small.jpg) center center no-repeat"
+                "url(headerimgs/header10_small.jpg) center top no-repeat"
             },
             20
           )
@@ -76,7 +76,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header9_small.jpg) center center no-repeat"
+                "url(headerimgs/header9_small.jpg) center top no-repeat"
             },
             30
           )
