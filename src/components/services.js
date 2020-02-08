@@ -1,5 +1,23 @@
 import "../styles/final/services.css";
 import React, { Component } from "react";
+import EventSlider from "../layouts/flickity_slider";
+
+const servicesImages = [
+  "services_slider/servicesPg1.jpg",
+  "services_slider/servicesPg2.jpg",
+  "services_slider/servicesPg3.jpg",
+  "services_slider/servicesPg4.jpg",
+  "services_slider/servicesPg5.jpg",
+  "services_slider/servicesPg6.jpg",
+  "services_slider/servicesPg7.jpg",
+  "services_slider/servicesPg8.jpg",
+  "services_slider/servicesPg9.jpg",
+  "services_slider/servicesPg10.jpg",
+  "services_slider/servicesPg11.jpg",
+  "services_slider/servicesPg12.jpg",
+  "services_slider/servicesPg13.jpg",
+  "services_slider/servicesPg14.jpg"
+];
 
 export default class Services extends Component {
   render() {
@@ -8,6 +26,12 @@ export default class Services extends Component {
         <div className="main_services " id="services_top">
           <div id="main" className="services__services services__item">
             <h3 className="services--title">Services Offered</h3>
+            <EventSlider eventImages={servicesImages} />
+            <p>
+              Our facility serves a daily average of 40-45 patients, 3 to 5 of
+              which are usually in-patient clients and is open every day 24
+              hours a day.
+            </p>
             <p>
               With a bed capacity of 20 and 5 for In-patient and Out-patient
               observation rooms respectively as well as a staff of 25 and we are
@@ -27,14 +51,14 @@ export default class Services extends Component {
               <li className="servicespage__listitem">Physiotherapy</li>
             </ul>
           </div>
-          <div className="patientInfo__services services__item">
+          {/* <div className="patientInfo__services services__item">
             <h3 className="services--title">
               Patient Information since Inception
             </h3>
             <p>
               Our facility serves a daily average of 40-45 patients, 3 to 5 of
               which are usually in-patient clients and is open every day 24
-              hours a day..
+              hours a day.
             </p>
             <div>Some of the particulars of our practice are: </div>
             <ul className="services--items">
@@ -72,7 +96,7 @@ export default class Services extends Component {
                 people per month
               </li>
             </ul>
-          </div>
+          </div> */}
           <div id="staff" className=" services__item staffpicture__services">
             <picture>
               <source

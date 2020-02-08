@@ -1,5 +1,6 @@
 import React from "react";
 import Flickity from "react-flickity-component";
+import "../styles/final/slider.css";
 
 const flickityOptions = {
   initialIndex: 0,

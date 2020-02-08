@@ -1,0 +1,125 @@
+.carousel {
+  height: 400px;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background: #4b4a4a;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .flickity-page-dots {
+    width: 100vw;
+    height: inherit;
+    align-self: center;
+    display: flex;
+    transform: translateX(30%) translateY(85%);
+    background-color: transparent;
+  }
+  .flickity-page-dots .dot {
+    width: 12px;
+    list-style-type: none;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid var(--cyan);
+    border-radius: 50%;
+    margin: 4px;
+  } */
+/* fill-in selected dot */
+
+/* .flickity-page-dots .dot.is-selected {
+    background: var(--cyan);
+  } */
+.carousel-cell {
+  width: 100%;
+  height: 400px;
+  margin-right: 10px;
+  background: #333;
+  /* outline: 1px solid red; */
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.carousel-cell-image {
+  /* bottom: 0; */
+  width: auto;
+  display: flex;
+  align-self: flex-end;
+  max-height: 100%;
+
+  margin: auto auto;
+  max-width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
+/* flickity buttons */
+
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: #333;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: var(--cyan);
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  /* transform: translateX(400px); */
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  background: transparent;
+  padding: 5px;
+  border: none;
+  background-color: white;
+  opacity: 0.6;
+}
+.flickity-prev-next-button.next {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  background: transparent;
+  padding: 5px;
+  outline: none;
+  border: none;
+  background-color: white;
+  opacity: 0.6;
+}
+.flickity-prev-next-button.next:hover,
+.flickity-prev-next-button.previous:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+  opacity: 1;
+}
+.flickity-button:disabled {
+  display: none;
+}
+.flickity-button-icon:hover {
+  fill: var(--cyan);
+  transition: 0.2s;
+  /* border-color: transparent; */
+}
+/* @media only screen and (max-width: 600px) {
+    .flickity-prev-next-button.next {
+      right: 5px;
+    }
+    .flickity-prev-next-button.previous {
+      left: 5px;
+    }
+  } */

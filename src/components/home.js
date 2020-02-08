@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 // import { HashLink } from "react-router-hash-link";
 import CSSPlugin from "gsap/CSSPlugin";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/iconlibrary";
 import "../styles/final/home.css";
@@ -52,7 +51,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header1_small.jpg) center center no-repeat "
+                "url(headerimgs/header9_small.jpg) center center no-repeat "
             },
             0
           )
@@ -69,7 +68,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header3_small.jpg) center center no-repeat"
+                "url(headerimgs/header10_small.jpg) center center no-repeat"
             },
             20
           )
@@ -77,7 +76,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header1_small.jpg) center center no-repeat"
+                "url(headerimgs/header9_small.jpg) center center no-repeat"
             },
             30
           )
@@ -89,7 +88,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header1_big.jpg) center center no-repeat "
+                "url(headerimgs/header9_big.jpg) center center no-repeat "
             },
             0
           )
@@ -105,7 +104,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header3_big.jpg) center center no-repeat"
+                "url(headerimgs/header10_big.jpg) center center no-repeat"
             },
             20
           )
@@ -113,7 +112,7 @@ export default function Home() {
             homeImgref,
             {
               background:
-                "url(headerimgs/header1_big.jpg) center center no-repeat"
+                "url(headerimgs/header9_big.jpg) center center no-repeat"
             },
             30
           )
