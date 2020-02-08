@@ -71,7 +71,7 @@ header a {
   display: -webkit-inline-box;
   display: inline-flex;
   -webkit-box-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .header__logo {
@@ -82,7 +82,7 @@ header a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
 }
 .logo {
   width: 105px;
@@ -103,12 +103,12 @@ header a {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding-right: 150px;
   margin-top: 3em;
   /* align-items: flex-start; */
@@ -133,7 +133,7 @@ header a {
 }
 .header__navigation span {
   -webkit-box-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 
 .margin3px {
@@ -149,7 +149,7 @@ header a {
 
   padding: 5px;
   -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .emergency__text {
@@ -168,26 +168,26 @@ header a {
   display: none;
   align-self: flex-end;
   -webkit-box-flex: 1.5;
-          flex-grow: 1.5;
+  flex-grow: 1.5;
 }
 .menu {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-direction: row;
+  flex-direction: row;
   align-self: flex-end;
   -webkit-box-flex: 0.25fr;
-          flex: 0.25fr 1fr;
+  flex: 0.25fr 1fr;
 }
 
 @media only screen and (max-width: 950px) {
   .header__navigation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
     padding: 0;
     margin-top: auto;
   }
@@ -202,14 +202,14 @@ header a {
     display: none;
     padding: 10px;
     -webkit-padding-start: 20px;
-            padding-inline-start: 20px;
+    padding-inline-start: 20px;
     margin: 15px;
     /* color: transparent;*/
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
   }
   nav {
     position: relative;
@@ -250,5 +250,17 @@ header a {
     opacity: 0;
     -webkit-transition: opacity 1000ms;
     transition: opacity 1000ms;
+  }
+  .logo {
+    transform: scale(0.5) translateY(-10px) translateX(-7px);
+  }
+  header {
+    margin: 1px;
+    height: 21.5vh;
+  }
+  header * {
+    margin: 2px;
+    display: block;
+    padding: 0;
   }
 }

@@ -5,7 +5,7 @@ import Logo from "../images/naasilogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/iconlibrary";
 import { NavLink, Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+// import { HashLink } from "react-router-hash-link";
 import { TimelineMax, Elastic } from "gsap";
 import { CSSTransition } from "react-transition-group";
 
@@ -85,7 +85,7 @@ export default function Header() {
       <div className="header__logo">
         <Link to="/">
           {/* // eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-          <img src={Logo} alt="logo image did not load" className="logo" />
+          <img src={Logo} alt="Logo" className="logo" />
         </Link>
         {/* <span className="logo--text">Because we care for your health.</span> */}
       </div>
