@@ -49,12 +49,10 @@ header {
   /* margin: 5px; */
 
   background-color: white;
-
   padding: 9px;
   font-family: var(--firaSans);
   list-style: none;
   display: grid;
-
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.25fr 2fr;
   grid-template-areas:
@@ -146,7 +144,6 @@ header a {
   border-radius: 50%;
   border: solid 1px transparent;
   color: #a41d21ff;
-
   padding: 5px;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
@@ -215,7 +212,7 @@ header a {
     position: relative;
   }
   .menu {
-    top: 100px;
+    top: 40px;
     right: 30px;
   }
   .menu li {
@@ -252,7 +249,10 @@ header a {
     transition: opacity 1000ms;
   }
   .logo {
-    transform: scale(0.5) translateY(-10px) translateX(-7px);
+    transform: scale(0.5) translateY(-70px) translateX(-7px);
+  }
+  .burger {
+    transform: translateY(-30px);
   }
   header {
     margin: 1px;
@@ -260,7 +260,7 @@ header a {
   }
   header * {
     margin: 2px;
-    display: block;
+    /* display: block; */
     padding: 0;
   }
 }
