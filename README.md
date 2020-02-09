@@ -21,6 +21,6 @@ To run project :
 
 To see the deployed version(React frontend) on netlify find it [here](https://react-express-project-nassi-site-preliminary.netlify.com)
 
-To see the code to deploy the same project using Netlify functions to deploy the express backend find it [here.](https://github.com/khalayilwanga/Nassi__netlifyDeploymentgit)
+To see the code to deploy the same project using Netlify functions to deploy the express backend find it [here.](https://nassihospitals-preliminary.netlify.com)
 
 Thanks for visiting!
